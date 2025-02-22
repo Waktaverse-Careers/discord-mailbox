@@ -1,0 +1,37 @@
+{
+	"name": "discord-mailbox",
+	"main": "src/workers.ts",
+	"compatibility_date": "2025-02-16",
+	"observability": {
+		"enabled": true
+	},
+	"placement": {
+	  	"mode": "smart"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "discord-mailbox",
+			"database_id": "c4412698-00f5-4f3e-80a2-29067554ceb8"
+		}
+	],
+	"vars": {
+		"FORWARD_TO_ADDRESS": "careers.waktaverse@gmail.com",
+
+		"EMAIL_PREFIX": "Waktaverse Careers",
+
+		"TLD_TAG": {},
+		"ADDRESS_TAG": {
+			"abuse@": "1340636773516312599",
+			"data@": "1340636805703401512",
+			"contact@": "1340636860732411904"
+		},
+
+		"DISCORD_CLIENT_ID": "1340626972543549501",
+		"DISCORD_GUILD_ID": "1228219266692546663",
+		"DISCORD_CHANNEL_ID": "1340627536249356350",
+		
+		"DISCORD_EMBED_LIMIT": 4096,
+		"DISCORD_FILE_LIMIT": 8000000
+	}
+}
